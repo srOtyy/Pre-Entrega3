@@ -343,22 +343,63 @@ body {
 @media screen and (max-width: 999px) {
   /* header */
   .header .nav {
-    font-size: 1em;
     flex-direction: column;
-    padding: 10px;
     height: auto;
     width: 100vw;
+    padding: 10px;
+    gap: 1px;
+    align-items: center;
   }
   .header .nav .nav-logo {
+    font-size: 1em;
     width: 100vw;
     text-align: center;
+    font-size: 0.7em;
+    padding: 0;
   }
   .header .nav .nav-list {
     justify-content: space-evenly;
     margin: auto;
+    animation: header-animation-nav both;
+    animation-timeline: scroll();
+    animation-range: 10px 350px;
   }
   .header .nav .nav-list .link {
-    font-size: 0.9em;
+    font-size: 0.7em;
+  }
+  /* animaciones */
+  @keyframes header-animation {
+    100% {
+      padding: 0;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.896);
+      gap: 0;
+    }
+  }
+  @keyframes header-animation-nav {
+    to {
+      padding: 0;
+    }
+  }
+  @keyframes header-animation-links {
+    from {
+      color: black;
+    }
+    to {
+      color: #135D66;
+      font-size: 0.6em;
+    }
+  }
+  @keyframes header-animation-logo {
+    from {
+      color: black;
+      font-size: 1.7em;
+    }
+    to {
+      color: #135D66;
+      font-size: 1.3em;
+      padding-top: 5px;
+    }
   }
   /* main */
   .container-main {
