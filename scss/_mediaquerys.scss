@@ -1,0 +1,157 @@
+@import "colores";
+
+/*  Media Querys  */
+
+@media screen and (max-width:999px) {
+   /* header */
+   .header{
+        .nav{
+            font-size: 1em;
+            flex-direction: column;
+            padding: 10px;
+            height: auto;
+            width: 100vw;
+            .nav-logo{
+                width: 100vw;
+                text-align: center;
+            }
+            .nav-list{
+                justify-content: space-evenly;
+                margin: auto;
+                .link{
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+ 
+    /* main */
+    .container-main{
+        margin: auto;
+        font-size: .65em;
+        /* background */
+        .background{
+            background-image: url(imagenes/fondo_mobile.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 450px;
+            width: 100vw;
+            /* panel  */
+            .panel-bg{
+                width: 35vw;
+                top: 110px;
+                flex-direction: row;
+                margin: auto;
+                .panel{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    height: auto;
+                    .panel__select{
+                        margin-bottom: 20px;
+                    }
+                    .panel__button{
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        .main{
+            visibility: visible;
+            .title{
+                padding: 20px;
+            }
+             /* galeria */
+            .galery{
+                width: 90vw;
+                h2{
+                    font-size: 1.36em;
+                }  
+                .galery__articles{
+                    gap: 8px;
+                    justify-content: center;
+                    gap: 6%;
+                    .article__card{
+                        width: 280px;
+                        height: 300px;
+                        .article__card__figure{
+                            width: 280px;
+                            height: 220px;
+                            .figure-imagen{
+                                width: inherit;
+                                height: inherit;
+                            }
+                        }
+                        .article__card__info{
+                            text-align: center;
+                            width: 100%;
+                            font-size: 1.2em;
+                            .info-flex{
+                                display: flex;
+                                flex-flow: row wrap;
+                                margin: auto;
+                            }
+                            .info-precio{
+                                visibility: visible;
+                                display: inline-block;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+     
+    /* footer */
+    .footer{
+        flex-direction: column;
+        font-size: .7em;
+        align-items: center;
+        .us{
+            width: auto;
+    
+        }
+        .info{
+            font-size: 1.2em;
+            line-height: 1.2em;
+            padding: 20px;
+            padding-top: 40px;
+            width: auto;
+        }
+    }
+   
+    /* contacto */
+    .contacto-container{
+        .container__bg{
+            background-image: url(imagenes/fondo_contacto_moble.png);
+            width: 90vw;
+            height: 112px;
+
+        }
+        .container__box{
+            flex-direction: column;
+            .image{
+                display: none;
+            }
+            .container__box__div{
+                margin: auto;
+                h2{
+                    padding: 0;
+                    text-align: center;
+                }
+                .form{
+                    align-items: center;
+                    .input{
+                        margin: 0;
+                        width: 70vw;
+                    }
+                }
+            }
+        }
+    }
+}
