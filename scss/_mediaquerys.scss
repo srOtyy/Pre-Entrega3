@@ -12,21 +12,25 @@
             padding: 10px;
             gap: 1px;
             align-items: center;
+                animation-range:1px 30px;
             .nav-logo{
                 font-size: 1em;
                 width: 100vw;
                 text-align: center;
                 font-size: 0.7em;
                 padding: 0;
+                animation-range:1px 10px;
+
             }
             .nav-list{
                 justify-content: space-evenly;
                 margin: auto;
                 animation: header-animation-nav both;
                 animation-timeline: scroll();
-                animation-range:10px 350px;
+                animation-range:1px 10px;
                 .link{
                     font-size: 0.7em;
+                    animation-range:1px 10px;
                 }
             }
         }

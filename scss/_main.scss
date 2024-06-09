@@ -105,7 +105,7 @@
                     border-top: none;
                     border-radius: 10px;
                     //articulos
-                    .article__card__figure {
+                    .article__card__figure { /* en este elemento van los hover de la animacion*/
                         position: relative;
                         height: 330px;
                         width: 330px;
@@ -119,6 +119,39 @@
                             width: 100%;
                             height: 100%;
                             transition: all 500ms ease-out;
+                        }
+                        .figure-capa {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(1,1,1,0.4);
+                            transition: all 500ms ease-out;
+                            opacity: 0;
+                            visibility: hidden;
+                            text-align: center;
+                            h2{
+                                color: white;
+                                margin-top: 200px;
+                                font-weight: 400;
+                                margin-top: 220px;
+                                transition: all 500ms ease-out;
+                                border: none;
+
+                            
+                            }
+                        }
+                        /*Animaciones de los articulos*/
+                        &:hover > .figure-capa{
+                            opacity: 1;
+                            visibility: visible;
+                            
+                        }
+                        &:hover > .figure-capa h2{
+                            margin-top: 120px;
+                        }
+                        &:hover > .figure-imagen{
+                            transform: scale(1.2);
                         }
                     }
                     .article__card__info {
