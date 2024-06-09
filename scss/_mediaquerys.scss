@@ -133,6 +133,16 @@
                                 width: inherit;
                                 height: inherit;
                             }
+                            &:hover > .figure-capa{
+                                visibility: hidden;
+                                
+                            }
+                            &:hover > .figure-capa h2{
+                                visibility: hidden;
+                            }
+                            &:hover > .figure-imagen{
+                                transform: scale(1);
+                            }
                         }
                         .article__card__info{
                             text-align: center;
@@ -146,7 +156,10 @@
                             .info-precio{
                                 visibility: visible;
                                 display: inline-block;
-                                margin: 0;
+                                padding-top: 10px;
+                                padding-bottom: 2px;
+                                font-size: 1.3em;
+                                color: $color-oscuro0;
                             }
                         }
                     }

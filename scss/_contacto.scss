@@ -1,8 +1,9 @@
 /* -----------------INICIO contacto----------------- */
+@import "colores";
 
 .contacto-container{
     height: auto;
-    background-color: white;
+    background-color:$contacto-color-background;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -20,7 +21,7 @@
     }
     .container__box{
         display: flex;
-        background-color: white;
+        background-color: $contacto-color-background;
         padding: 90px 20px;
         height: 550px;
         width: 90vw;
@@ -33,6 +34,7 @@
             background-image: url(imagenes/gato_grande.jpg);
             background-position: center;
             background-size: cover;
+            
         }
         .container__box__div{
             width: 60vw;
